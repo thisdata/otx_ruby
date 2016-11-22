@@ -2,6 +2,7 @@ module OTX
   #
   # Pulse Indicator of Compromise (IoC) records
   #
+  # @attr [String] id IoC record ID value
   # @attr [String] _id IoC record ID value
   # @attr [String] indicator Value of the indicator type
   # @attr [String] type Type of IoC
@@ -28,6 +29,6 @@ module OTX
   #   CVE - Common Vulnerability and Exposure (CVE) entry describing a software vulnerability that can be exploited to engage in malicious activity.
   #
   class Indicators < OTX::Type::Base
-    attr_accessor :_id, :indicator, :type, :description, :title, :content
+    attr_accessor :id, :_id, :indicator, :type, :description, :title, :content
   end
 end
